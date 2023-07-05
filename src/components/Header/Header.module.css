@@ -1,0 +1,16 @@
+.header {
+  padding: 15px 40px;
+  border-bottom: 2px solid rgb(160, 160, 160);
+  box-shadow: 0px 2px #9c9c9c94;
+}
+
+.navigation {
+  display: flex;
+  gap: 20px;
+}
+
+.link {
+  font-size: 22px;
+  font-weight: 500;
+  text-decoration: none;
+}

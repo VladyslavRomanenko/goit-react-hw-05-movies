@@ -1,0 +1,26 @@
+.form {
+  margin: 10px 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.input,
+.button {
+  padding: 5px 10px;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+.button {
+  background-color: transparent;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.button:hover {
+  background-color: #eeeeee;
+}
+
+.link {
+  font-size: 20px;
+}

@@ -1,0 +1,24 @@
+.casts {
+  padding: 20px 20px;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.item {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.character {
+  font-size: 14px;
+}

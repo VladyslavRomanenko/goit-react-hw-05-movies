@@ -1,0 +1,25 @@
+.reviews {
+  padding: 20px 20px;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.author {
+  margin-bottom: 7px;
+}
+
+.review {
+  font-size: 18px;
+  text-align: justify;
+  text-indent: 1rem;
+}
+
+.noReview {
+  font-size: 20px;
+  font-weight: 600;
+}

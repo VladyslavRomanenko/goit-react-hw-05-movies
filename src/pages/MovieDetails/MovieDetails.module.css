@@ -1,0 +1,72 @@
+.wrapper {
+  display: flex;
+}
+
+.back {
+  display: inline-block;
+  margin: 10px 20px;
+  padding: 5px 10px;
+  background-color: grey;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+}
+.back:hover {
+  background-color: rgb(218, 218, 218);
+  color: black;
+}
+
+.details {
+  display: flex;
+  gap: 30px;
+  margin: 10px 20px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.overview,
+.score {
+  font-size: 18px;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+.genr {
+  font-size: 18px;
+}
+
+.movieDetails {
+  padding: 20px 20px;
+  border: 1px solid grey;
+}
+
+.title {
+  margin-bottom: 10px;
+}
+
+.link {
+  font-size: 18px;
+  text-decoration: none;
+  display: block;
+  padding: 5px 10px;
+  background-color: grey;
+  color: white;
+  border-radius: 10px;
+  transition: background-color 250ms linear, color 250ms linear;
+}
+
+.link:hover {
+  background-color: #e5e5e5;
+  color: black;
+}
