@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link, useParams, Outlet, useLocation } from 'react-router-dom';
 import { getMovieDetails } from 'service/api';
 import css from './MovieDetails.module.css';
