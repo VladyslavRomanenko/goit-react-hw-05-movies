@@ -1,27 +1,34 @@
-import React, { useEffect, useState } from 'react';
-import { Link, useParams, Outlet } from 'react-router-dom';
+import React, { useEffect, useRef, useState } from 'react';
+import { Link, useParams, Outlet, useLocation } from 'react-router-dom';
 import { getMovieDetails } from 'service/api';
 import css from './MovieDetails.module.css';
+import noImage from '../../img/no-image.jpg';
 
 const MovieDetails = () => {
   const { movieId } = useParams();
   const [movie, setMovie] = useState();
+  const location = useLocation();
 
   useEffect(() => {
     getMovieDetails(movieId).then(movie => setMovie(movie));
   }, [movieId]);
+
   if (!movie) {
     return null;
   }
   return (
     <>
       <div>
-        <Link to={'/'} className={css.back}>
+        <Link to={location.state ?? '/'} className={css.back}>
           GO BACK
         </Link>
         <div className={css.details}>
           <img
-            src={`https://image.tmdb.org/t/p/original/${movie.poster_path}`}
+            src={
+              movie.poster_path
+                ? `https://image.tmdb.org/t/p/original/${movie.poster_path}`
+                : noImage
+            }
             width={'300px'}
             height={'300px'}
             alt={movie.original_title}
