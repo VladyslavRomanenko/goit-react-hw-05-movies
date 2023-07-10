@@ -1,5 +1,6 @@
 import MovieItem from 'components/MovieItem/MovieItem';
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const MovieList = ({ movies }) => {
   return (
@@ -12,3 +13,11 @@ const MovieList = ({ movies }) => {
 };
 
 export default MovieList;
+
+MovieList.propTypes = {
+  movies: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+    })
+  ).isRequired,
+};

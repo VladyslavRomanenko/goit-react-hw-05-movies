@@ -56,12 +56,12 @@ const MovieDetails = () => {
         <h2 className={css.title}>Additional information</h2>
         <ul className={css.list}>
           <li>
-            <Link to={'cast'} className={css.link}>
+            <Link to={'cast'} className={css.link} state={location.state}>
               Cast
             </Link>
           </li>
           <li>
-            <Link to={'reviews'} className={css.link}>
+            <Link to={'reviews'} className={css.link} state={location.state}>
               Reviews
             </Link>
           </li>
